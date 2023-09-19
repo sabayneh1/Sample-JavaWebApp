@@ -56,8 +56,8 @@ stages:
 
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: 'webapp/artifacts'
-        artifact: 'webapp'
+        targetPath: '$(Build.SourcesDirectory)/webapp/artifacts'
+        artifact: 'artifacts'
         #publishLocation: 'pipeline'
         # Specify other required inputs here if needed
 
