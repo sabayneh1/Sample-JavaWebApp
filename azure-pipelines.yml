@@ -56,9 +56,9 @@ stages:
 
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Pipeline.Workspace)/drop'
-        artifact: 'drop'
-        publishLocation: 'pipeline'
+        targetPath: '/artifacts/webapp'
+        artifact: 'webapp'
+        #publishLocation: 'pipeline'
         # Specify other required inputs here if needed
 
 - stage: Deploy
